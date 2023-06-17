@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                afficher()
+            }
+        )
+    </script>
+    <script src="../js.js"></script>
+     <style>
+         body{
+             background-color: darksalmon;
+         }
+         .carta{
+             border: solid 1px gray;
+             border-radius: 10px;
+             text-align: center;
+             margin: 20px;
+         }
+         .myimg{
+            width: 120px;
+            height: 120px;
+            display: block;
+            cursor:pointer;
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ISMONTIC-TANGER</h1>
+        <H2>DD-106</H2>
+        <h2>Rappel:css/js/boostrap/Jquery</h2>
+        <h2>TP/FACTURE</h2>
+    </div>
+    <hr>
+    <div class="container" style="background-color: whitesmoke;">
+        <div class="row">
+            <div class="col-8">
+                <table style="background-color: rgba(245, 245, 245, 0.699);">
+                    <tr>
+                        <td>
+                            <input type="text" name="" id="chercher" class="form-control" style="width:60%" >
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-success" name="" value="Rechercher" id="" onclick="afficher()" >
+                            <input type="button" class="btn btn-primary" name="" value="imprimer" id="" >
+                            <input type="button" class="btn btn-warning" name="" value="Imprimer facture" id="" >
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <div class="col-8" id="nzel"></div>
+            <div class="col-4">
+                <table class="table table-borderless" border="1">
+                    <thead>
+                        <th>PRODUIT</th>
+                        <th>PRIX</th>
+                        <th>QTE</th>
+                        <th>TOTAL</th>
+                    </thead>
+                    <tbody id="Tbody">
+    
+                    </tbody>
+                    <tfoot>
+                        <td colspan="2">Total</td>
+                        <td id="QteTotal"></td>
+                        <td id="TotalTotal"></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" >@nadasmae3</div>
+</body>
+</html>

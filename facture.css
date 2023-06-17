@@ -1,0 +1,19 @@
+body{
+    background-color: darkseagreen;
+};
+.myCard{
+    border:solid 3px gray;
+    border-radius:10px;
+    background-color:whitesmoke;
+}
+.myImage{
+    width:120px;
+    height:120px;
+    display:block;
+}
+// prices.push(price)
+//         for (i=1;i<=prices.length;i++){
+//             for(var elt of prices){
+//                 price+
+//             }
+//         }
